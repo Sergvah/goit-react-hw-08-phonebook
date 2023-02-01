@@ -1,0 +1,18 @@
+.button {
+  text-decoration: none;
+  padding: 5px;
+  color: aliceblue;
+}
+.span {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.box {
+  display: flex;
+}
+.text {
+  margin: 0;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+.find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(169, 169, 169);
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: rgb(238, 94, 42);
+}
+.search {
+  margin-top: 20px;
+  width: 100px;
+  padding: 0;
+}
+.label {
+  margin-bottom: 10px;
+}
