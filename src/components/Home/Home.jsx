@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
 import css from '../Home/Home.module.css';
+
 const Home = () => {
   const theme = createTheme({
     status: {

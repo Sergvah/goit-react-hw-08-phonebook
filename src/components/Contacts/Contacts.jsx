@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/operations';
 import { TextField, Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import css from 'components/Contacts/contacts.module.css';
+import css from 'components/Contacts/Сontacts.module.css';
 import Notiflix from 'notiflix';
 import { getContactsSelector, getIsLoadingSelector } from 'redux/selectors';
 
@@ -12,7 +12,6 @@ const Contacts = () => {
   const [number, setNumber] = useState('');
 
   const handleNameChange = event => {
-    console.log('dddd');
     const { name, value } = event.currentTarget;
     switch (name) {
       case 'name':

@@ -2,9 +2,9 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../redux/auth/selectors-auth';
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations-auth';
-import css from '../UserMenu/UserMenu.module.css';
 import { Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import css from '../UserMenu/UserMenu.module.css';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -46,9 +46,6 @@ const UserMenu = () => {
             </Button>
           </Box>
         </ThemeProvider>
-        {/* <button className={css.button} onClick={handleSubmit} type="button">
-          Log out
-        </button> */}
       </div>
     </>
   );

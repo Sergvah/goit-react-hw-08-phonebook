@@ -31,10 +31,7 @@ const contactsSlice = createSlice({
       state.isLoading = true;
     },
     [addContact.fulfilled](state, action) {
-      console.log(action.payload);
-
       state.isLoading = false;
-
       state.error = null;
       state.items.push(action.payload);
     },
@@ -71,5 +68,4 @@ const contactsSlice = createSlice({
     },
   },
 });
-
 export const contactsReducer = contactsSlice.reducer;

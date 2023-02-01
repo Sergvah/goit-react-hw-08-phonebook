@@ -4,7 +4,7 @@ import { deleteContact } from 'redux/operations';
 import { getIsLoadingSelector } from 'redux/selectors';
 import { Button, Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import css from 'components/ContactItem/contactitem.module.css';
+import css from 'components/ContactItem/Сontactitem.module.css';
 
 const ContactItem = ({ item }) => {
   const dispatch = useDispatch();

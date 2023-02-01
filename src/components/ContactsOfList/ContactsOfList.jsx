@@ -1,9 +1,9 @@
 import ContactItem from 'components/ContactItem/ContactItem';
-import css from 'components/ContactsOfList/contactsoflist.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getContactsSelector, getFilterSelector } from 'redux/selectors';
 import { fetchContacts } from 'redux/operations';
+import css from 'components/ContactsOfList/Сontactsoflist.module.css';
 
 const ContactsOfList = () => {
   const contacts = useSelector(getContactsSelector);
