@@ -1,7 +1,6 @@
 .item {
   display: flex;
   flex-direction: row;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .item:not(:last-child) {
   margin-bottom: 10px;
@@ -12,13 +11,8 @@
 }
 .numb {
   margin: 0;
+  margin-right: 20px;
 }
 .btn {
-  display: flex;
-  cursor: pointer;
   height: 20px;
-  background-color: red;
-  border-radius: 5px;
-  border: 1.5px solid;
-  margin-left: 10px;
 }
