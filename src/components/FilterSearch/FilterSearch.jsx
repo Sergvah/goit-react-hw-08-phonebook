@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeFilter } from 'redux/filterSlice';
 import { getFilterSelector } from 'redux/selectors';
 import { TextField } from '@mui/material';
-import css from 'components/FilterSearch/Filtersearch.module.css';
+import css from 'components/FilterSearch/SearchFilter.module.css';
 
 const FilterSearch = () => {
   const dispatch = useDispatch();
