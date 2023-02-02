@@ -10,6 +10,7 @@ import { refreshUser } from 'redux/auth/operations-auth';
 import { selectIsRefreshing } from 'redux/auth/selectors-auth';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import { selectIsLoggedIn } from 'redux/auth/selectors-auth';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -17,14 +18,14 @@ export const App = () => {
     dispatch(refreshUser());
   }, [dispatch]);
   const isRefreshing = useSelector(selectIsRefreshing);
-
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   return isRefreshing ? (
     'Fetching user data ...'
   ) : (
     <div className="container">
       <Layout />
       <Routes>
-        <Route path="/" index element={<Home />} />
+        {!isLoggedIn && <Route index element={<Home />} />}
         <Route
           path="/contacts"
           element={<PrivateRoute component={MainPage} />}
